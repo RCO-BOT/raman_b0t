@@ -20,10 +20,6 @@ const client = new tmi.Client({
 
 client.connect().then(console.log(`Twitch bot alive!`)).catch(err => console.log(err));
 
-client.on('follow', async (channe, user) => {
-    client.say(channe, `Thank you for the follow, ${user}!`)
-})
-
 client.on('message', async (channel, tags, message, self) => {
 	if(self || !message.startsWith('!')) return;
 
