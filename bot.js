@@ -15,7 +15,7 @@ const client = new tmi.Client({
 		username: process.env.USERNAME,
 		password: process.env.TOKENDOM
 	},
-	channels: [ 'domthenoodle2k' ]
+	channels: [ 'the_n00dl3' ]
 });
 
 client.connect().then(console.log(`Twitch bot alive!`)).catch(err => console.log(err));
